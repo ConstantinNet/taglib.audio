@@ -124,12 +124,10 @@ namespace TagLib {
 		/// </remarks>
 		public static void Register (Type type)
 		{
-#if SILVERLIGHT
+
 			Attribute [] attrs = Attribute.GetCustomAttributes (type,
 				typeof(SupportedMimeType), false);
-#else
-		    Attribute[] attrs = type.GetTypeInfo().GetCustomAttributes(typeof (SupportedMimeType), false).ToArray() as Attribute[];
-#endif
+
 			if(attrs == null || attrs.Length == 0)
 				return;
 			
