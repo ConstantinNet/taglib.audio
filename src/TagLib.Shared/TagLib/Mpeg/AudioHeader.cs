@@ -480,7 +480,7 @@ namespace TagLib.Mpeg {
 					duration = TimeSpan.FromSeconds (
 						(double) (AudioFrameLength *
 						frames) / (double)
-						(AudioBitrate * 125) + 0.5);
+						(AudioBitrate * 125));
 				}
 				
 				return duration;
