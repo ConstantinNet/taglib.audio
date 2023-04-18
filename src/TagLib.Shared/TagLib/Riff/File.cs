@@ -540,10 +540,12 @@ namespace TagLib.Riff
 					}
 					break;
 				}
-				
-				// "ID32" is a custom box for this format that
-				// contains an ID3v2 tag.
-				case "ID32":
+
+                // "ID32" is a custom box for this format that
+                // contains an ID3v2 tag.
+                case "ID3 ":
+                case "id3 ":
+                case "ID32":
 					if (read_tags && id32_tag == null)
 						id32_tag = new Id3v2.Tag (this,
 							position + 8);
@@ -582,7 +584,7 @@ namespace TagLib.Riff
 				
 				// Move to the next item.
 			} while ((position += 8 + size) + 8 < length);
-			
+
 			// If we're reading properties, and one were found,
 			// throw an exception. Otherwise, create the Properties
 			// object.
