@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagLib.Audio", "TagLib.Audio\TagLib.Audio.csproj", "{19D441B3-6B5E-4044-9094-DF6720C60F16}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TagLib.Shared", "..\..\TagLib.Shared\TagLib.Shared.shproj", "{3D52D490-5C15-4E67-A1EE-4337835103AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19D441B3-6B5E-4044-9094-DF6720C60F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D441B3-6B5E-4044-9094-DF6720C60F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D441B3-6B5E-4044-9094-DF6720C60F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D441B3-6B5E-4044-9094-DF6720C60F16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FBB1F0B-BC95-4083-B737-2AD530588B0A}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\TagLib.Shared\TagLib.Shared.projitems*{19d441b3-6b5e-4044-9094-df6720c60f16}*SharedItemsImports = 5
+		..\..\TagLib.Shared\TagLib.Shared.projitems*{3d52d490-5c15-4e67-a1ee-4337835103ac}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal
