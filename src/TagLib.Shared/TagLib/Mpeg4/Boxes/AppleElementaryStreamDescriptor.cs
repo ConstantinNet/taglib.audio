@@ -244,7 +244,7 @@ namespace TagLib.Mpeg4 {
 		///    bitrate the stream described by the current instance.
 		/// </value>
 		public uint MaximumBitrate {
-			get {return max_bitrate / 1000;}
+			get { return (uint)Math.Round((double)max_bitrate / 1000);}
 		}
 		
 		/// <summary>
@@ -256,7 +256,7 @@ namespace TagLib.Mpeg4 {
 		///    bitrate the stream described by the current instance.
 		/// </value>
 		public uint AverageBitrate {
-			get {return average_bitrate / 1000;}
+			get {return (uint)Math.Round((double)average_bitrate / 1000);}
 		}
 		
 		/// <summary>
