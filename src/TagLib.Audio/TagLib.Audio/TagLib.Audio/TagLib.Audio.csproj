@@ -6,9 +6,10 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>TagLib.Audio</Title>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageReleaseNotes>Bug Fix Audio BitRate for MP4 files</PackageReleaseNotes>
     <Description>TagLib.Audio is a library to read ID3 and other metadata format from audio files.  This is an implementation of TagLib.Audio forked for forward progress using .NET 6.0</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <Import Project="..\..\..\TagLib.Shared\TagLib.Shared.projitems" Label="Shared" />
